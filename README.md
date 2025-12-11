@@ -105,8 +105,10 @@ cp dotenv .env
 Most required variables are pre-set by default, the ones that must be set before starting are:
 - SECRET_KEY_BASE= 
 - LOADBALANCER_SECRET= 
-- URL_HOST= 
+- URL_HOST=
+- SL_HOST=
 - NGINX_SSL=
+- LETSENCRYPT_EMAIL=
 
 Obtain the value for SECRET_KEY_BASE with:
 ```sh
