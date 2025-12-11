@@ -37,7 +37,10 @@ PROTECTED_RECORDINGS_TOKEN_TIMEOUT=60
 PROTECTED_RECORDINGS_TIMEOUT=360
 RAILS_LOG_TO_STDOUT=true
 ```
-
+-  then run
+```sh
+docker exec -i scalelite-api bundle exec rake db:migrate
+```
 
 ## Configure your Front-End to use Scalelite
 
