@@ -27,7 +27,7 @@ SCALELITE_TAG=<scalelite version>
 ```sh
 docker exec -i scalelite-api bundle exec rake db:migrate
 ```
-- to update to 1.6.2 add:
+- to update to 1.6.2 with PROTECTED_RECORDINGS_ENABLED add:
 
 ```
 SCALELITE_DOCKER_IMAGE=blindsidenetwks/scalelite:v1.6.2
