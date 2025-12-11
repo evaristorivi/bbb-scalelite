@@ -27,6 +27,17 @@ SCALELITE_TAG=<scalelite version>
 ```sh
 docker exec -i scalelite-api bundle exec rake db:migrate
 ```
+- to update to 1.6.2 add:
+
+```
+SCALELITE_DOCKER_IMAGE=blindsidenetwks/scalelite:v1.6.2
+SCALELITE_RECORDINGS_DOCKER_IMAGE=bigbluebutton/bbb-playback-proxy:latest
+PROTECTED_RECORDINGS_ENABLED=true
+PROTECTED_RECORDINGS_TOKEN_TIMEOUT=60
+PROTECTED_RECORDINGS_TIMEOUT=360
+RAILS_LOG_TO_STDOUT=true
+```
+
 
 ## Configure your Front-End to use Scalelite
 
