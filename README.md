@@ -18,15 +18,7 @@ For the external Redis Cache, the minimum recommended server requirements are:
 
 
 ## Upgrading
-- Change the these two variables in .env 
-```
-SCALELITE_REPO=blindsidenetwks 
-SCALELITE_TAG=<scalelite version>
-```
-- If it is a major upgrade then run
-```sh
-docker exec -i scalelite-api bundle exec rake db:migrate
-```
+
 - to update to 1.6.2 with PROTECTED_RECORDINGS_ENABLED add:
 
 ```
