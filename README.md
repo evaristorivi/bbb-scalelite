@@ -295,6 +295,9 @@ sudo bbb-conf --restart
 sudo bbb-conf --check
 ```
 
+**Even so, you still need to keep an eye on the logs and fix any permission issues.**
+
+
 ## Note
 
 it only worked for me when configured in Moodle SHA1 (bigbluebuttonbn_checksum_algorithm).
