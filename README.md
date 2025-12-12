@@ -17,26 +17,7 @@ For the external Redis Cache, the minimum recommended server requirements are:
 - Persistence must be enabled
 
 
-## Upgrading
 
-- to update to 1.6.2 with PROTECTED_RECORDINGS_ENABLED  https://github.com/blindsidenetworks/scalelite/blob/master/docs/protectedrecordings_README.md add:
-
-```
-SCALELITE_DOCKER_IMAGE=blindsidenetwks/scalelite:v1.6.2
-SCALELITE_RECORDINGS_DOCKER_IMAGE=bigbluebutton/bbb-playback-proxy:latest
-PROTECTED_RECORDINGS_ENABLED=true
-PROTECTED_RECORDINGS_TOKEN_TIMEOUT=60
-PROTECTED_RECORDINGS_TIMEOUT=360
-RAILS_LOG_TO_STDOUT=true # because in the new versions, the logs did not appear by default in standard output.
-#RAILS_ALLOWED_HOSTS=xx.xx.xx.x,xxxxxx.com # This only if errors appear in the IP connection block log that should be accessed.
-```
--  then run
-```sh
-docker-compose down
-docker-compose pull
-docker-compose up -d
-docker exec -i scalelite-api bundle exec rake db:migrate
-```
 
 ## Configure your Front-End to use Scalelite
 
@@ -313,6 +294,29 @@ Restart BigBlueButton server
 sudo bbb-conf --restart
 sudo bbb-conf --check
 ```
+Note: it only worked for me when configured in Moodle SHA1.
+Once 1.0 was deployed, I updated to 1.6.
+## Upgrading
+
+- to update to 1.6.2 with PROTECTED_RECORDINGS_ENABLED  https://github.com/blindsidenetworks/scalelite/blob/master/docs/protectedrecordings_README.md add:
+
+```
+SCALELITE_DOCKER_IMAGE=blindsidenetwks/scalelite:v1.6.2
+SCALELITE_RECORDINGS_DOCKER_IMAGE=bigbluebutton/bbb-playback-proxy:latest
+PROTECTED_RECORDINGS_ENABLED=true
+PROTECTED_RECORDINGS_TOKEN_TIMEOUT=60
+PROTECTED_RECORDINGS_TIMEOUT=360
+RAILS_LOG_TO_STDOUT=true # because in the new versions, the logs did not appear by default in standard output.
+#RAILS_ALLOWED_HOSTS=xx.xx.xx.x,xxxxxx.com # This only if errors appear in the IP connection block log that should be accessed.
+```
+-  then run
+```sh
+docker-compose down
+docker-compose pull
+docker-compose up -d
+docker exec -i scalelite-api bundle exec rake db:migrate
+```
+Now I was able to configure SHA256 in Moodle and it worked.
 
 ## How to test Scalelite
 
