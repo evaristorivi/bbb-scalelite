@@ -94,7 +94,7 @@ chmod +x /usr/local/bin/docker-compose
 
 ### Fetching the scripts
 ```sh
-git clone https://github.com/jfederico/scalelite-run
+git clone https://github.com/evaristorivi/bbb-scalelite/
 cd scalelite-run
 ```
 
