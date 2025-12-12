@@ -9,7 +9,7 @@ SL_HOST=
 LETSENCRYPT_EMAIL=
 
 ### Optional for scalelite-api
-# LOADBALANCER_CHECKSUM_ALGORITHM=SHA256
+LOADBALANCER_CHECKSUM_ALGORITHM=SHA256
 
 #
 ### Required by scalelite-api and scalelite-poller
