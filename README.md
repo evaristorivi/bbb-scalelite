@@ -294,8 +294,11 @@ Restart BigBlueButton server
 sudo bbb-conf --restart
 sudo bbb-conf --check
 ```
-Note: it only worked for me when configured in Moodle SHA1.
-Once 1.0 was deployed, I updated to 1.6.
+
+## Note
+
+it only worked for me when configured in Moodle SHA1 (bigbluebuttonbn_checksum_algorithm).
+Once 1.0 was deployed, I updated to 1.6 and it works with sha256.
 ## Upgrading
 
 -To update Scalelite from versions 1.0 to 1.6.x and enable protected recordings, edit your .env file and add:
@@ -316,8 +319,7 @@ docker-compose pull
 docker-compose up -d
 docker exec -i scalelite-api bundle exec rake db:migrate
 ```
-Now I was able to configure SHA256 in Moodle and it worked.
-
+After updating, Moodle can be configured with SHA256 without any problems (older versions required SHA1).
 ## How to test Scalelite
 
 - Visit [API-MATE](https://mconf.github.io/api-mate/)
@@ -328,3 +330,4 @@ Now I was able to configure SHA256 in Moodle and it worked.
 ### Credits
 
 A large part of above installation steps is thanks to [Jesus Federico](https://github.com/jfederico)
+[manishkatyan] https://github.com/manishkatyan
