@@ -28,7 +28,7 @@ PROTECTED_RECORDINGS_ENABLED=true
 PROTECTED_RECORDINGS_TOKEN_TIMEOUT=60
 PROTECTED_RECORDINGS_TIMEOUT=360
 RAILS_LOG_TO_STDOUT=true # because in the new versions, the logs did not appear by default in standard output.
-#RAILS_ALLOWED_HOSTS=xx.xx.xx.x,xxxxxx.com This only if errors appear in the IP connection block log that should be accessed.
+#RAILS_ALLOWED_HOSTS=xx.xx.xx.x,xxxxxx.com # This only if errors appear in the IP connection block log that should be accessed.
 ```
 -  then run
 ```sh
