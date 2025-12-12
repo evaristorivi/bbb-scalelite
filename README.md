@@ -19,7 +19,7 @@ For the external Redis Cache, the minimum recommended server requirements are:
 
 ## Upgrading
 
-- to update to 1.6.2 with PROTECTED_RECORDINGS_ENABLED add:
+- to update to 1.6.2 with PROTECTED_RECORDINGS_ENABLED  https://github.com/blindsidenetworks/scalelite/blob/master/docs/protectedrecordings_README.md add:
 
 ```
 SCALELITE_DOCKER_IMAGE=blindsidenetwks/scalelite:v1.6.2
