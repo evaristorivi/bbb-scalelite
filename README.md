@@ -298,7 +298,7 @@ Note: it only worked for me when configured in Moodle SHA1.
 Once 1.0 was deployed, I updated to 1.6.
 ## Upgrading
 
-- to update to 1.6.2 with PROTECTED_RECORDINGS_ENABLED  https://github.com/blindsidenetworks/scalelite/blob/master/docs/protectedrecordings_README.md add:
+-To update Scalelite from versions 1.0 to 1.6.x and enable protected recordings, edit your .env file and add:
 
 ```
 SCALELITE_DOCKER_IMAGE=blindsidenetwks/scalelite:v1.6.2
