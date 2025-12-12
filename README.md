@@ -95,20 +95,25 @@ chmod +x /usr/local/bin/docker-compose
 ### Fetching the scripts
 ```sh
 git clone https://github.com/evaristorivi/bbb-scalelite/
-cd scalelite-run
+cd bbb-scalelite
 ```
 
 ### Initializing environment variables
 ```sh
 # Create a new .env file based on the dotenv file included.
+
+# For version 1.0:
 cp dotenv .env
+
+# For version 1.6:
+cp dotenv_1.6 .env
 ```
 Most required variables are pre-set by default, the ones that must be set before starting are:
 - SECRET_KEY_BASE= 
+- DOMAIN_NAME=
 - LOADBALANCER_SECRET= 
 - URL_HOST=
 - SL_HOST=
-- NGINX_SSL=
 - LETSENCRYPT_EMAIL=
 
 Obtain the value for SECRET_KEY_BASE with:
