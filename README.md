@@ -105,7 +105,7 @@ cd bbb-scalelite
 # For version 1.0:
 cp dotenv .env
 
-# For version 1.6:
+# For version 1.6.2 with PROTECTED_RECORDINGS_ENABLED:
 cp dotenv_1.6 .env
 ```
 Most required variables are pre-set by default, the ones that must be set before starting are:
