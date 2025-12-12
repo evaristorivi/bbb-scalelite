@@ -329,5 +329,4 @@ After updating, Moodle can be configured with SHA256 without any problems (older
 
 ### Credits
 
-A large part of above installation steps is thanks to [Jesus Federico](https://github.com/jfederico)
-[manishkatyan] https://github.com/manishkatyan
+A large part of above installation steps is thanks to [Jesus Federico](https://github.com/jfederico) and [manishkatyan](https://github.com/manishkatyan)
