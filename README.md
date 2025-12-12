@@ -32,6 +32,9 @@ RAILS_LOG_TO_STDOUT=true # because in the new versions, the logs did not appear 
 ```
 -  then run
 ```sh
+docker-compose down
+docker-compose pull
+docker-compose up -d
 docker exec -i scalelite-api bundle exec rake db:migrate
 ```
 
@@ -105,8 +108,6 @@ cd bbb-scalelite
 # For version 1.0:
 cp dotenv .env
 
-# For version 1.6.2 with PROTECTED_RECORDINGS_ENABLED:
-cp dotenv_1.6 .env
 ```
 Most required variables are pre-set by default, the ones that must be set before starting are:
 - SECRET_KEY_BASE= 
